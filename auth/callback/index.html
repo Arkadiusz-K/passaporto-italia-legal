@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adres potwierdzony · Passaporto Italia</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<main>
+  <div class="brand">Passaporto Italia</div>
+  <h1>Adres e-mail został potwierdzony</h1>
+  <p class="lead">Możesz wrócić do aplikacji i zalogować się na swoje konto.</p>
+  <div class="card">
+    <a id="open-app" class="button" href="passaportoitalia://auth/callback">Otwórz aplikację</a>
+    <p class="meta">Jeśli korzystasz z komputera, uruchom aplikację na telefonie i zaloguj się.</p>
+  </div>
+  <footer><a href="../../privacy-policy/">Polityka prywatności</a></footer>
+</main>
+<script>
+  const target = `passaportoitalia://auth/callback${location.search}${location.hash}`;
+  document.getElementById('open-app').href = target;
+  if (/Android/i.test(navigator.userAgent)) window.location.href = target;
+</script>
+</body>
+</html>
