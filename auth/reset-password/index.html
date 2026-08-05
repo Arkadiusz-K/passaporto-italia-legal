@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resetowanie hasła · Passaporto Italia</title>
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+<main>
+  <div class="brand">Passaporto Italia</div>
+  <h1>Dokończ zmianę hasła w aplikacji</h1>
+  <p class="lead">Otwórz Passaporto Italia na telefonie, aby ustawić nowe hasło.</p>
+  <div class="card">
+    <a id="open-app" class="button" href="passaportoitalia://auth/reset-password">Otwórz aplikację</a>
+  </div>
+  <footer><a href="../../privacy-policy/">Polityka prywatności</a></footer>
+</main>
+<script>
+  const target = `passaportoitalia://auth/reset-password${location.search}${location.hash}`;
+  document.getElementById('open-app').href = target;
+  if (/Android/i.test(navigator.userAgent)) window.location.href = target;
+</script>
+</body>
+</html>
