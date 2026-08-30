@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Polityka prywatności aplikacji Passaporto d&rsquo;Italia.">
-  <title>Polityka prywatności · Passaporto d&rsquo;Italia</title>
+  <meta name="description" content="Polityka prywatności aplikacji Passaporto d’Italia.">
+  <title>Polityka prywatności · Passaporto d’Italia</title>
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
 <main>
-  <div class="brand">Passaporto d&rsquo;Italia</div>
+  <div class="brand">Passaporto d’Italia</div>
   <h1>Polityka prywatności</h1>
-  <p class="meta">Obowiązuje od 6 sierpnia 2026 r.</p>
+  <p class="meta">Obowiązuje od 25 sierpnia 2026 r. · wersja 2</p>
+  <nav aria-label="Wersja językowa"><strong>Polski</strong><a href="en/" lang="en">English</a></nav>
 
   <div class="card">
     <strong>Administrator danych:</strong> Arkadiusz Karaś<br>
@@ -20,7 +21,7 @@
   </div>
 
   <h2>1. Zakres polityki</h2>
-  <p>Niniejsza polityka opisuje przetwarzanie danych w aplikacji mobilnej Passaporto d&rsquo;Italia oraz na jej stronie informacyjnej. Aplikacja jest przeznaczona dla użytkowników, którzy ukończyli 16 lat.</p>
+  <p>Niniejsza polityka opisuje przetwarzanie danych w aplikacji mobilnej Passaporto d’Italia oraz na jej stronie informacyjnej. Aplikacja jest przeznaczona dla użytkowników, którzy ukończyli 16 lat.</p>
 
   <h2>2. Korzystanie bez konta</h2>
   <p>Użytkownik może korzystać z aplikacji w trybie lokalnym bez rejestracji. Informacje o zdobytych odznakach i ustawienia trybu lokalnego są wtedy przechowywane na urządzeniu. Nie są wysyłane na konto użytkownika w chmurze. Usunięcie danych aplikacji w ustawieniach Androida lub odinstalowanie aplikacji usuwa dane lokalne, z zastrzeżeniem działania kopii zapasowych systemu Android.</p>
@@ -31,7 +32,8 @@
     <li>adres e-mail i techniczny identyfikator użytkownika;</li>
     <li>opcjonalną nazwę profilu;</li>
     <li>zdobyte odznaki, postęp, powiązane znaczniki czasu i dobrowolne notatki;</li>
-    <li>dane techniczne niezbędne do bezpieczeństwa, diagnostyki i dostarczenia usługi, takie jak adres IP, informacje o żądaniach i logi uwierzytelniania.</li>
+    <li>dane techniczne niezbędne do bezpieczeństwa, diagnostyki i dostarczenia usługi, takie jak adres IP, informacje o żądaniach i logi uwierzytelniania;</li>
+    <li>w przypadku zakupu Premium: identyfikator produktu, datę zakupu, stan uprawnienia oraz skrót tokenu zakupu przekazanego przez Google Play. Nie otrzymujemy numeru karty ani danych rachunku płatniczego.</li>
   </ul>
   <p>Aplikacja nie pobiera dokładnej ani przybliżonej lokalizacji urządzenia. Mapa regionów nie służy do śledzenia użytkownika.</p>
 
@@ -39,7 +41,8 @@
   <ul>
     <li>utworzenie i obsługa konta, logowanie, synchronizacja oraz odtwarzanie kolekcji — wykonanie umowy lub działania na żądanie użytkownika (art. 6 ust. 1 lit. b RODO);</li>
     <li>ochrona usługi, przeciwdziałanie nadużyciom i diagnozowanie błędów — prawnie uzasadniony interes administratora (art. 6 ust. 1 lit. f RODO);</li>
-    <li>realizacja obowiązków prawnych i odpowiedzi na uprawnione żądania — art. 6 ust. 1 lit. c RODO.</li>
+    <li>obsługa, weryfikacja i przywracanie zakupu Premium — wykonanie umowy (art. 6 ust. 1 lit. b RODO);</li>
+    <li>realizacja obowiązków prawnych, w tym obowiązków związanych z rozliczeniami i reklamacjami, oraz odpowiedzi na uprawnione żądania — art. 6 ust. 1 lit. c RODO.</li>
   </ul>
 
   <h2>5. Dostawcy usług</h2>
@@ -48,17 +51,21 @@
     <li><strong>Supabase</strong> — uwierzytelnianie, baza danych, synchronizacja postępu i logi techniczne;</li>
     <li><strong>Brevo</strong> — wysyłka transakcyjnych wiadomości e-mail, takich jak potwierdzenie rejestracji i reset hasła;</li>
     <li><strong>GitHub Pages</strong> — publiczne udostępnianie tej strony i stron pomocy.</li>
+    <li><strong>Sentry</strong> — opcjonalne raportowanie awarii i diagnostyka stabilności aplikacji;</li>
+    <li><strong>Google Play</strong> — realizacja płatności, potwierdzenie i weryfikacja zakupu Premium oraz obsługa zwrotów.</li>
   </ul>
   <p>Dostawcy mogą przetwarzać dane w państwach spoza Europejskiego Obszaru Gospodarczego zgodnie ze stosowanymi przez nich mechanizmami prawnymi, w szczególności decyzjami stwierdzającymi odpowiedni stopień ochrony lub standardowymi klauzulami umownymi.</p>
 
   <h2>6. Wiadomości e-mail</h2>
-  <p>Brevo otrzymuje adres odbiorcy oraz dane techniczne wiadomości potrzebne do jej dostarczenia. Wysyłamy wyłącznie wiadomości związane z kontem i bezpieczeństwem. Obecnie nie wysyłamy newslettera ani marketingowych wiadomości e-mail.</p>
+  <p>Brevo otrzymuje adres odbiorcy oraz dane techniczne wiadomości potrzebne do jej dostarczenia. Wysyłamy wyłącznie wiadomości związane z kontem, bezpieczeństwem i potwierdzeniem zakupu Premium oraz zapisanej zgody zakupowej. Obecnie nie wysyłamy newslettera ani marketingowych wiadomości e-mail.</p>
 
-  <h2>7. Reklamy i analityka</h2>
+  <h2>7. Raportowanie awarii, reklamy i analityka</h2>
+  <p>Jeżeli raportowanie awarii jest włączone, Sentry otrzymuje informacje potrzebne do rozpoznania i naprawienia błędu, w szczególności stos wywołań, wersję aplikacji, model urządzenia, wersję systemu oraz czas awarii. Aplikacja nie przekazuje do Sentry adresu e-mail ani identyfikatora konta, nie dołącza zrzutów ekranu, hierarchii widoków ani treści żądań sieciowych. Dane są przed wysłaniem filtrowane z adresów e-mail, adresów Supabase i tokenów. Adres IP może technicznie uczestniczyć w zestawieniu połączenia i jest przetwarzany zgodnie z ustawieniami projektu oraz zasadami prywatności Sentry.</p>
+  <p>Raportowanie awarii służy zapewnieniu bezpieczeństwa i stabilności aplikacji na podstawie prawnie uzasadnionego interesu administratora. Nie jest wykorzystywane do profilowania, reklamy ani śledzenia aktywności użytkownika.</p>
   <p>Obecna wersja aplikacji nie zawiera reklam, profilowania reklamowego ani zewnętrznych narzędzi analitycznych. Jeżeli takie rozwiązania zostaną dodane, polityka zostanie zaktualizowana przed ich uruchomieniem, a wymagane zgody i ustawienia prywatności zostaną udostępnione użytkownikom.</p>
 
   <h2>8. Okres przechowywania</h2>
-  <p>Dane konta i kolekcji przechowujemy do czasu usunięcia konta. Dane techniczne i kopie bezpieczeństwa mogą być przechowywane przez ograniczony okres potrzebny do zapewnienia bezpieczeństwa, ciągłości usługi i wykonania obowiązków prawnych, zgodnie z okresami retencji dostawców. Dane, których dalsze przechowywanie jest wymagane prawem lub konieczne do ustalenia, dochodzenia albo obrony roszczeń, mogą zostać zachowane przez odpowiedni okres.</p>
+  <p>Dane konta, kolekcji i uprawnienia Premium przechowujemy do czasu usunięcia konta, z wyjątkiem danych, których dalsze przechowywanie jest wymagane prawem lub konieczne do rozliczenia transakcji, obsługi reklamacji albo ustalenia, dochodzenia lub obrony roszczeń. Dane techniczne i kopie bezpieczeństwa mogą być przechowywane przez ograniczony okres potrzebny do zapewnienia bezpieczeństwa i ciągłości usługi, zgodnie z okresami retencji dostawców.</p>
 
   <h2>9. Usunięcie konta</h2>
   <p>Konto można usunąć bezpośrednio w aplikacji w sekcji profilu, wybierając „Usuń konto i dane”. Powoduje to trwałe usunięcie konta, profilu, zdobytych odznak i postępu przechowywanego w Supabase. Żądanie można również przesłać zgodnie z instrukcją na stronie <a href="../account-deletion/">Usunięcie konta i danych</a>.</p>
